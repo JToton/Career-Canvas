@@ -11,251 +11,252 @@
   </head>
 
   <body>
-    <!--Navigation Bar-->
-    <nav id="nav">
-      <h1 class="name">Career Canvas</h1>
-      <header>
+    <main>
+      <!--Navigation Bar-->
+      <nav id="nav">
+        <h1 class="name">Career Canvas</h1>
+        <header>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </header>
+      </nav>
+      <!--Navigation Bar Dropdown-->
+      <nav id="dropdown">
+        <div class="name">Career Canvas</div>
+        <drop class="dropdown-menu">
+          <icon class="dropdown-icon" onclick="toggleDropdown()">
+            <!--Dropdown Lines-->
+            <span></span>
+            <span></span>
+            <span></span>
+          </icon>
+          <dropdown class="dropdown-links">
+            <li><a href="#about" onclick="toggleDropdown()">About</a></li>
+            <li><a href="#experience" onclick="toggleDropdown()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleDropdown()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleDropdown()">Contact</a></li>
+          </dropdown>
+        </drop>
+      </nav>
+
+      <!-- Profile Section / Icons and Socials 
+          Contains contact information as well -->
+      <section id="contact">
+      <section id="profile">
+        <figure class="profile-1">
+          <img
+            src="./assets/images/icons/profile/profile-1-color.png"
+            alt="Profile picture of Jacob Toton"
+          />
+        </figure>
+        <figcaption class="profile-1-text">
+          <p class="profile-text-para-1">Hello! My name is</p>
+          <h1 class="title">Jacob Toton</h1>
+          <p class="profile-text-para-2">
+            QA Engineer | Front End Developer | API & UI Automation Tester
+          </p>
+          <p>Resume and Contact Information</p>
+          <!-- Create button to link resume through icon -->
+          <container class="button-container">
+            <address id="socials">
+              <img
+                src="/assets/resume/icons8-cv-96.png"
+                alt="Jacob Toton's Resume."
+                class="icon"
+                onclick="window.open(`/assets/Resume/JacobTotonResume.pdf`)"
+              />
+              <!-- Link All Icons to Respective Social Link -->
+              <img
+                src="/assets/images/icons/linkedin/icons8-linkedin-96.png"
+                alt="Jacob Toton's LinkedIn Profile."
+                class="icon"
+                onclick="location.href=`https://www.linkedin.com/in/jacobtoton/`"
+              />
+              <img
+                id="color-img-linkedin"
+                src="/assets/images/icons/github/icons8-github-96.png"
+                alt="Jacob Toton's github Profile."
+                class="icon"
+                onclick="location.href=`https://github.com/JToton`"
+              />
+              <img
+                src="/assets/images/icons/discord/icons8-discord-96.png"
+                alt="Jacob Toton's discord Profile."
+                class="icon"
+                onclick="location.href=`https://discords.com/bio/p/QAEngineerAutomation`"
+              />
+              <!-- Auto Open Email Application with Information -->
+              <a href="mailto:jake_toton@live.com"><img
+                src="/assets/images/icons/email/icons8-email-100.png"
+                alt="Jacob Toton's email auto form fill."
+                class="icon"></a>
+            </address>
+          </container>
+        </figcaption>
+      </section>
+    </section>
+
+      <!-- About Me Section -->
+      <section id="about">
+        <p class="profile-text-para-2">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <container class="section-container">
+          <container class="about-details-container">
+            <text class="text-container">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+                doloribus voluptas facere consequuntur exercitationem itaque
+                officiis fugiat iste quasi ducimus error, numquam beatae et neque.
+                Aliquam blanditiis iusto ipsa corrupti!
+              </p>
+            </text>
+            <container class="about-containers">
+              <figure class="details-container">
+                <!-- Link Icon Images to Style Above Text -->
+                <img
+                  src="/assets/images/icons/experience/icons8-storytelling-100.png"
+                  alt="Experience Icon"
+                  class="icon-2"
+                />
+                <h3>Experience</h3>
+                <p>2+ Years <br />Qaulity Assurance UI API Testing</p>
+                <p>Automation Programming</p>
+                <p>Agile Project Management</p>
+              </figure>
+              <figure class="details-container">
+                <img
+                  src="/assets/images/icons/education/icons8-education-100.png"
+                  alt="Education Icon"
+                  class="icon-2"
+                />
+                <h3>Education</h3>
+                <p>
+                  University of Utah B.Cs. Bachelors Degree <br />University of
+                  Utah Coding Bootcamp
+                </p>
+              </figure>
+            </container>
+          </container>
+        </container>
+      </section>
+
+      <!-- Experience Section / Skills as Text Format -> Flex -->
+      <section id="experience">
+        <p class="profile-text-para-2">Here is a list of my</p>
+        <h1 class="title">Experience</h1>
+        <container class="experience-details-container">
+          <container class="about-containers">
+            <container class="details-container">
+              <h2 class="experience-sub-title">Front End Development</h2>
+              <container class="article-container">
+                <article>
+                    <h3>HTML</h3>
+                    <p>Beginner</p>                
+                </article>
+                <article>                
+                    <h3>CSS</h3>
+                    <p>Beginner</p>                
+                </article>
+                <article>                               
+                    <h3>JavaScript</h3>
+                    <p>Experienced</p>               
+                </article>
+                <article>                               
+                    <h3>Terminal Commands</h3>
+                    <p>Experienced</p>               
+                </article>
+                <article>                               
+                    <h3>jQuery</h3>
+                    <p>Intermediate</p>              
+                </article>
+                <article>          
+                    <h3>JSON</h3>
+                    <p>Very Experienced</p>
+                </article>
+              </container>
+            </container>
+            <container class="details-container">
+              <h2 class="experience-sub-title">Back End Development</h2>
+              <container class="article-container">
+                <article>
+                    <h3>NODE.js</h3>
+                    <p>Beginner</p>
+                </article>
+                <article>
+                    <h3>MySQL</h3>
+                    <p>Intermediate</p>
+                </article>
+                <article>
+                    <h3>Databases</h3>
+                    <p>Intermediate</p>
+                </article>
+                <article>
+                    <h3>PWA's</h3>
+                    <p>Beginner</p>
+                </article>
+                <article>
+                    <h3>Data Structures</h3>
+                    <p>Experienced</p>
+                </article>
+                <article>
+                    <h3>Algorithms</h3>
+                    <p>Experienced</p>
+                </article>
+                <article>
+                    <h3>REACT</h3>
+                    <p>Beginner</p>
+                </article>
+                </article>
+                <article>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                </article>
+                </article>
+                <article>
+                    <h3>C#</h3>
+                    <p>Beginner</p>
+                </article>
+                <article>
+                    <h3>Java</h3>
+                    <p>Beginner</p>
+                </article>
+              </container>
+            </container>
+          </container>
+        </container>
+      </section>
+
+    <section id="projects">
+      <p class="profile-text-para-2">Take a look at my recent</p>
+          <h1 class="title">Projects</h1>
+      <container class="experience-details-container">
+        <container class="about-containers">
+          <container class="details-container">
+            
+
+
+          </container>
+        </container>
+      </container>
+    </section>
+
+
+    <footer>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </header>
-    </nav>
-    <!--Navigation Bar Dropdown-->
-    <nav id="dropdown">
-      <div class="name">Career Canvas</div>
-      <drop class="dropdown-menu">
-        <icon class="dropdown-icon" onclick="toggleDropdown()">
-          <!--Dropdown Lines-->
-          <span></span>
-          <span></span>
-          <span></span>
-        </icon>
-        <dropdown class="dropdown-links">
-          <li><a href="#about" onclick="toggleDropdown()">About</a></li>
-          <li><a href="#experience" onclick="toggleDropdown()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleDropdown()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleDropdown()">Contact</a></li>
-        </dropdown>
-      </drop>
-    </nav>
-
-    <!-- Profile Section / Icons and Socials 
-         Contains contact information as well -->
-    <section id="contact">
-    <section id="profile">
-      <figure class="profile-1">
-        <img
-          src="./assets/images/icons/profile/profile-1-color.png"
-          alt="Profile picture of Jacob Toton"
-        />
-      </figure>
-      <figcaption class="profile-1-text">
-        <p class="profile-text-para-1">Hello! My name is</p>
-        <h1 class="title">Jacob Toton</h1>
-        <p class="profile-text-para-2">
-          QA Engineer | Front End Developer | API & UI Automation Tester
-        </p>
-        <p>Resume and Contact Information</p>
-        <!-- Create button to link resume through icon -->
-        <container class="button-container">
-          <address id="socials">
-            <img
-              src="/assets/resume/icons8-cv-96.png"
-              alt="Jacob Toton's Resume."
-              class="icon"
-              onclick="window.open(`/assets/Resume/JacobTotonResume.pdf`)"
-            />
-            <!-- Link All Icons to Respective Social Link -->
-            <img
-              src="/assets/images/icons/linkedin/icons8-linkedin-96.png"
-              alt="Jacob Toton's LinkedIn Profile."
-              class="icon"
-              onclick="location.href=`https://www.linkedin.com/in/jacobtoton/`"
-            />
-            <img
-              id="color-img-linkedin"
-              src="/assets/images/icons/github/icons8-github-96.png"
-              alt="Jacob Toton's github Profile."
-              class="icon"
-              onclick="location.href=`https://github.com/JToton`"
-            />
-            <img
-              src="/assets/images/icons/discord/icons8-discord-96.png"
-              alt="Jacob Toton's discord Profile."
-              class="icon"
-              onclick="location.href=`https://discords.com/bio/p/QAEngineerAutomation`"
-            />
-            <!-- Auto Open Email Application with Information -->
-            <a href="mailto:jake_toton@live.com"><img
-              src="/assets/images/icons/email/icons8-email-100.png"
-              alt="Jacob Toton's email auto form fill."
-              class="icon"></a>
-          </address>
-        </container>
-      </figcaption>
-    </section>
-  </section>
-
-    <!-- About Me Section -->
-    <section id="about">
-      <p class="profile-text-para-2">Get to know more</p>
-      <h1 class="title">About Me</h1>
-      <container class="section-container">
-        <container class="about-details-container">
-          <text class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-              doloribus voluptas facere consequuntur exercitationem itaque
-              officiis fugiat iste quasi ducimus error, numquam beatae et neque.
-              Aliquam blanditiis iusto ipsa corrupti!
-            </p>
-          </text>
-          <container class="about-containers">
-            <figure class="details-container">
-              <!-- Link Icon Images to Style Above Text -->
-              <img
-                src="/assets/images/icons/experience/icons8-storytelling-100.png"
-                alt="Experience Icon"
-                class="icon-2"
-              />
-              <h3>Experience</h3>
-              <p>2+ Years <br />Qaulity Assurance UI API Testing</p>
-              <p>Automation Programming</p>
-              <p>Agile Project Management</p>
-            </figure>
-            <figure class="details-container">
-              <img
-                src="/assets/images/icons/education/icons8-education-100.png"
-                alt="Education Icon"
-                class="icon-2"
-              />
-              <h3>Education</h3>
-              <p>
-                University of Utah B.Cs. Bachelors Degree <br />University of
-                Utah Coding Bootcamp
-              </p>
-            </figure>
-          </container>
-        </container>
-      </container>
-    </section>
-
-    <!-- Experience Section / Skills as Text Format -> Flex -->
-    <section id="experience">
-      <p class="profile-text-para-2">Here is a list of my</p>
-      <h1 class="title">Experience</h1>
-      <container class="experience-details-container">
-        <container class="about-containers">
-          <container class="details-container">
-            <h2 class="experience-sub-title">Front End Development</h2>
-            <container class="article-container">
-              <article>
-                  <h3>HTML</h3>
-                  <p>Beginner</p>                
-              </article>
-              <article>                
-                  <h3>CSS</h3>
-                  <p>Beginner</p>                
-              </article>
-              <article>                               
-                  <h3>JavaScript</h3>
-                  <p>Experienced</p>               
-              </article>
-              <article>                               
-                  <h3>Terminal Commands</h3>
-                  <p>Experienced</p>               
-              </article>
-              <article>                               
-                  <h3>jQuery</h3>
-                  <p>Intermediate</p>              
-              </article>
-              <article>          
-                  <h3>JSON</h3>
-                  <p>Very Experienced</p>
-              </article>
-            </container>
-          </container>
-          <container class="details-container">
-            <h2 class="experience-sub-title">Back End Development</h2>
-            <container class="article-container">
-              <article>
-                  <h3>NODE.js</h3>
-                  <p>Beginner</p>
-              </article>
-              <article>
-                  <h3>MySQL</h3>
-                  <p>Intermediate</p>
-              </article>
-              <article>
-                  <h3>Databases</h3>
-                  <p>Intermediate</p>
-              </article>
-              <article>
-                  <h3>PWA's</h3>
-                  <p>Beginner</p>
-              </article>
-              <article>
-                  <h3>Data Structures</h3>
-                  <p>Experienced</p>
-              </article>
-              <article>
-                  <h3>Algorithms</h3>
-                  <p>Experienced</p>
-              </article>
-              <article>
-                  <h3>REACT</h3>
-                  <p>Beginner</p>
-              </article>
-              </article>
-              <article>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-              </article>
-              </article>
-              <article>
-                  <h3>C#</h3>
-                  <p>Beginner</p>
-              </article>
-              <article>
-                  <h3>Java</h3>
-                  <p>Beginner</p>
-              </article>
-            </container>
-          </container>
-        </container>
-      </container>
-    </section>
-
-  <section id="projects">
-    <p class="profile-text-para-2">Take a look at my recent</p>
-        <h1 class="title">Projects</h1>
-    <container class="experience-details-container">
-      <container class="about-containers">
-        <container class="details-container">
-          
+    </footer>
 
 
-        </container>
-      </container>
-    </container>
-  </section>
-
-
-  <footer>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-  </footer>
-
-
-    <!--Link JavaScript File-->
-    <script src="script.js"></script>
-
+      <!--Link JavaScript File-->
+      <script src="script.js"></script>
+    </main>
   </body>
 </html>

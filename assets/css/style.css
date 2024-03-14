@@ -12,16 +12,34 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #e7c590;
-}
-
-/* Smooth Scroll */
-html {
+  /* background: linear-gradient(#e7c590, #b2cbf2); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  flex: auto;
   scroll-behavior: smooth;
+  height: 150%;
 }
 
+main {
+  width: 96%;
+  margin: 2rem auto;
+}
+
+html {
+  height: auto;
+}
 /* <P> Color */
 p {
   color: rgb(85, 85, 85);
+}
+
+.card-column {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  /* when the screen resizes, make it so our columns don't jump in size */
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
 }
 
 /* ----NAVIGATION MENUS---- */
@@ -33,9 +51,6 @@ nav {
   justify-content: space-around;
   align-items: center;
   /* View hight from top of container. 10% Screen */
-  height: 15vh;
-  background-color: #b2cbf2;
-  background: linear-gradient(#b2cbf2, #e7c590);
 }
 
 .nav-links {
@@ -153,8 +168,6 @@ a {
 
 /* Styling for the Section's */
 section {
-  padding-top: 4vh;
-  height: 40vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -165,7 +178,6 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 40vh;
 }
 
 /* Profile-1 flex / size */
@@ -319,7 +331,6 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 40vh;
 }
 
 footer {
@@ -328,9 +339,6 @@ footer {
   justify-content: space-around;
   align-items: center;
   /* View hight from top of container. 10% Screen */
-  height: 20vh;
-  background-color: #b2cbf2;
-  background: linear-gradient(#e7c590, #b2cbf2);
 }
 
 /* Flex / Position Control */

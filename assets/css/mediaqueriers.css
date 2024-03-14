@@ -1,50 +1,11 @@
-/* Mobile/flex compatibility controller */
-
-@media screen and (max-width: 1400px) {
-  /* When screen < 968 disapear */
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  #about-containers {
-    flex-wrap: wrap;
-  }
-}
-
+/* Controlling css file for mobile flex compatibility */
 @media screen and (max-width: 1200px) {
-  /* #nav {
-    display: none;
-  }
-  #dropdown {
-    display: flex;
-  }
-  .contact, .profile{
-    display: block;
-  } */
   /* When screen < 1200px disapear */
-  #experience,
-  .experience-details-container {
-    margin-top: 2rem;
-  }
-  #profile,
-  .section-container {
-    display: flex;
-  }
-  section,
-  .sections-container {
-    height: fit-content;
-  }
-  #section {
-    margin: 0 5%;
-  }
-}
-
-@media screen and (max-width: 968px) {
-  /* When screen < 968 disapear */
   #nav {
     display: none;
   }
   #dropdown {
     display: flex;
+    max-width: 100%;
   }
 }
