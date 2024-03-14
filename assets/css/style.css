@@ -1,33 +1,6 @@
-/* ----GENERAL---- */
-
 /* Imported Font Family */
 /* Font Sourced From : https://fonts.google.com/ */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
-
-/* Font Options */
-.roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
 
 /* General Margins */
 * {
@@ -35,49 +8,38 @@
   padding: 0;
 }
 
-/* Main Body Font Family */
+/* Font Family */
 body {
   font-family: "Roboto", sans-serif;
   background-color: #e7c590;
 }
 
-/* Links scroll rather than instantly jump. */
+/* Smooth Scroll */
 html {
   scroll-behavior: smooth;
 }
 
-/* Paragraph Color */
+/* <P> Color */
 p {
   color: rgb(85, 85, 85);
 }
 
-/* Transition */
-/* When button clicked change styles */
-a,
-.btn {
-  transition: all 300ms ease;
-}
-
 /* ----NAVIGATION MENUS---- */
-
-/* Navigation Flex Setup*/
-nav,
-.nav-links {
-  display: flex;
-}
 
 /* Flexbox Distribution */
 nav {
+  display: flex;
   /* Center items with space around each other */
   justify-content: space-around;
   align-items: center;
   /* View hight from top of container. 10% Screen */
-  height: 10vh;
+  height: 15vh;
   background-color: #b2cbf2;
   background: linear-gradient(#b2cbf2, #e7c590);
 }
 
 .nav-links {
+  display: flex;
   gap: 2rem;
   /* remove bullets */
   list-style: none;
@@ -85,19 +47,16 @@ nav {
   font-size: 2rem;
 }
 
-/* href style */
+/* href style / Initial hidden */
 a {
   color: black;
-  /* hide underline initially */
   text-decoration: none;
-  /* text-decoration-color: white; */
 }
 
+/* Color / Offset */
 .nav-links a:hover {
-  /* hover color change */
   color: grey;
   text-decoration: underline;
-  /* offset underline below text */
   text-underline-offset: 0.5rem;
   text-decoration-color: black;
 }
@@ -167,14 +126,9 @@ a {
   height: 200%;
   top: 100%;
   right: -15%;
-  /* background-color: white; */
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-}
-
-/* Style and Flex link container */
-.dropdown-links {
   display: block;
   padding: -1px;
   text-align: center;
@@ -187,9 +141,7 @@ a {
 
 /* Style List Items */
 .dropdown-links li {
-  /* Remove Bullets */
   list-style: none;
-  /* margin-bottom: 10%; */
 }
 
 /* Add class then control styling */
@@ -363,115 +315,24 @@ section {
   gap: 0.5rem;
 }
 
-/* ----PROOJECTS---- */
-
-/* Slideshow container */
-/* Sourced from https://w3schools.com/ */
-.slideshow-container {
-  display: flex;
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: white;
-  font-size: 38px;
-  font-family: "Roboto", sans-serif;
-  padding: 50px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-/* ----CONTACT---- */
-
-#contact {
+#project {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 40vh;
 }
 
-.contact-info-upper-container {
+footer {
   display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250 250 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
-  background-color: #b2cbf2;
-}
-
-.contact-info-container {
-  display: flex;
+  /* Center items with space around each other */
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
+  /* View hight from top of container. 10% Screen */
+  height: 20vh;
+  background-color: #b2cbf2;
+  background: linear-gradient(#e7c590, #b2cbf2);
+}
+
+p.copyright {
+  background: linear-gradient(#e7c590, #b2cbf2);
 }
