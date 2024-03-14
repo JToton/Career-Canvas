@@ -1,0 +1,11 @@
+/* Mobile/flex compatibility controller */
+
+@media screen and (max-width: 968px) {
+  /* When screen < 968 disapear */
+  #nav {
+    display: none;
+  }
+  #dropdown {
+    display: flex;
+  }
+}
