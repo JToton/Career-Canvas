@@ -2,261 +2,427 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Career Canvas</title>
-
-    <!--Link CSS Sheets-->
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <!--Created specific css sheet to house all media screens-->
     <link rel="stylesheet" href="/assets/css/mediaqueriers.css" />
   </head>
 
   <body>
-    <main>
-      <!--Navigation Bar-->
-      <nav id="nav">
-        <h1 class="name">Career Canvas</h1>
-        <header>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </header>
-      </nav>
-      <!--Navigation Bar Dropdown-->
-      <nav id="dropdown">
-        <div class="name">Career Canvas</div>
-        <drop class="dropdown-menu">
-          <icon class="dropdown-icon" onclick="toggleDropdown()">
-            <!--Dropdown Lines-->
-            <span></span>
-            <span></span>
-            <span></span>
-          </icon>
-          <dropdown class="dropdown-links">
-            <li><a href="#about" onclick="toggleDropdown()">About</a></li>
-            <li><a href="#experience" onclick="toggleDropdown()">Experience</a></li>
-            <li><a href="#projects" onclick="toggleDropdown()">Projects</a></li>
-            <li><a href="#contact" onclick="toggleDropdown()">Contact</a></li>
-          </dropdown>
-        </drop>
-      </nav>
-
-      <!-- Profile Section / Icons and Socials 
-          Contains contact information as well -->
-      <section id="contact">
-      <section id="profile">
-        <figure class="profile-1">
-          <img
-            src="./assets/images/icons/profile/profile-1-color.png"
-            alt="Profile picture of Jacob Toton"
-          />
-        </figure>
-        <figcaption class="profile-1-text">
-          <p class="profile-text-para-1">Hello! My name is</p>
-          <h1 class="title">Jacob Toton</h1>
-          <p class="profile-text-para-2">
-            QA Engineer | Front End Developer | API & UI Automation Tester
-          </p>
-          <p>Resume and Contact Information</p>
-          <!-- Create button to link resume through icon -->
-          <container class="button-container">
-            <address id="socials">
-              <img
-                src="/assets/resume/icons8-cv-96.png"
-                alt="Jacob Toton's Resume."
-                class="icon"
-                onclick="window.open(`/assets/Resume/JacobTotonResume.pdf`)"
-              />
-              <!-- Link All Icons to Respective Social Link -->
-              <img
-                src="/assets/images/icons/linkedin/icons8-linkedin-96.png"
-                alt="Jacob Toton's LinkedIn Profile."
-                class="icon"
-                onclick="location.href=`https://www.linkedin.com/in/jacobtoton/`"
-              />
-              <img
-                id="color-img-linkedin"
-                src="/assets/images/icons/github/icons8-github-96.png"
-                alt="Jacob Toton's github Profile."
-                class="icon"
-                onclick="location.href=`https://github.com/JToton`"
-              />
-              <img
-                src="/assets/images/icons/discord/icons8-discord-96.png"
-                alt="Jacob Toton's discord Profile."
-                class="icon"
-                onclick="location.href=`https://discords.com/bio/p/QAEngineerAutomation`"
-              />
-              <!-- Auto Open Email Application with Information -->
-              <a href="mailto:jake_toton@live.com"><img
-                src="/assets/images/icons/email/icons8-email-100.png"
-                alt="Jacob Toton's email auto form fill."
-                class="icon"></a>
-            </address>
-          </container>
-        </figcaption>
-      </section>
-    </section>
-
-      <!-- About Me Section -->
-      <section id="about">
-        <p class="profile-text-para-2">Get to know more</p>
-        <h1 class="title">About Me</h1>
-        <container class="section-container">
-          <container class="about-details-container">
-            <text class="text-container">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
-                doloribus voluptas facere consequuntur exercitationem itaque
-                officiis fugiat iste quasi ducimus error, numquam beatae et neque.
-                Aliquam blanditiis iusto ipsa corrupti!
-              </p>
-            </text>
-            <container class="about-containers">
-              <figure class="details-container">
-                <!-- Link Icon Images to Style Above Text -->
-                <img
-                  src="/assets/images/icons/experience/icons8-storytelling-100.png"
-                  alt="Experience Icon"
-                  class="icon-2"
-                />
-                <h3>Experience</h3>
-                <p>2+ Years <br />Qaulity Assurance UI API Testing</p>
-                <p>Automation Programming</p>
-                <p>Agile Project Management</p>
-              </figure>
-              <figure class="details-container">
-                <img
-                  src="/assets/images/icons/education/icons8-education-100.png"
-                  alt="Education Icon"
-                  class="icon-2"
-                />
-                <h3>Education</h3>
-                <p>
-                  University of Utah B.Cs. Bachelors Degree <br />University of
-                  Utah Coding Bootcamp
-                </p>
-              </figure>
-            </container>
-          </container>
-        </container>
-      </section>
-
-      <!-- Experience Section / Skills as Text Format -> Flex -->
-      <section id="experience">
-        <p class="profile-text-para-2">Here is a list of my</p>
-        <h1 class="title">Experience</h1>
-        <container class="experience-details-container">
-          <container class="about-containers">
-            <container class="details-container">
-              <h2 class="experience-sub-title">Front End Development</h2>
-              <container class="article-container">
-                <article>
-                    <h3>HTML</h3>
-                    <p>Beginner</p>                
-                </article>
-                <article>                
-                    <h3>CSS</h3>
-                    <p>Beginner</p>                
-                </article>
-                <article>                               
-                    <h3>JavaScript</h3>
-                    <p>Experienced</p>               
-                </article>
-                <article>                               
-                    <h3>Terminal Commands</h3>
-                    <p>Experienced</p>               
-                </article>
-                <article>                               
-                    <h3>jQuery</h3>
-                    <p>Intermediate</p>              
-                </article>
-                <article>          
-                    <h3>JSON</h3>
-                    <p>Very Experienced</p>
-                </article>
-              </container>
-            </container>
-            <container class="details-container">
-              <h2 class="experience-sub-title">Back End Development</h2>
-              <container class="article-container">
-                <article>
-                    <h3>NODE.js</h3>
-                    <p>Beginner</p>
-                </article>
-                <article>
-                    <h3>MySQL</h3>
-                    <p>Intermediate</p>
-                </article>
-                <article>
-                    <h3>Databases</h3>
-                    <p>Intermediate</p>
-                </article>
-                <article>
-                    <h3>PWA's</h3>
-                    <p>Beginner</p>
-                </article>
-                <article>
-                    <h3>Data Structures</h3>
-                    <p>Experienced</p>
-                </article>
-                <article>
-                    <h3>Algorithms</h3>
-                    <p>Experienced</p>
-                </article>
-                <article>
-                    <h3>REACT</h3>
-                    <p>Beginner</p>
-                </article>
-                </article>
-                <article>
-                    <h3>Python</h3>
-                    <p>Experienced</p>
-                </article>
-                </article>
-                <article>
-                    <h3>C#</h3>
-                    <p>Beginner</p>
-                </article>
-                <article>
-                    <h3>Java</h3>
-                    <p>Beginner</p>
-                </article>
-              </container>
-            </container>
-          </container>
-        </container>
-      </section>
-
-    <section id="projects">
-      <p class="profile-text-para-2">Take a look at my recent</p>
-          <h1 class="title">Projects</h1>
-      <container class="experience-details-container">
-        <container class="about-containers">
-          <container class="details-container">
-            
-
-
-          </container>
-        </container>
-      </container>
-    </section>
-
-
-    <footer>
+    <nav id="desktop-nav">
+      <div class="logo">Career Canvas</div>
+      <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Career Canvas</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img
+          src="/assets/images/icons/profile/profile-1-color.png"
+          alt="Profile image of Jacob Toton"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Jacob Toton</h1>
+        <p class="section__text__p2">
+          QA Engineer | Front End Developer | API & UI Automation Tester
+        </p>
+        <div class="btn-container"></div>
+        <div id="socials-container">
+          <img
+            src="/assets/resume/icons8-cv-96.png"
+            alt="Jacob Toton's Resume."
+            class="icon-responsive"
+            onclick="window.open(`/assets/Resume/JacobTotonResume.pdf`)"
+          />
+          <img
+            src="/assets/images/icons/linkedin/icons8-linkedin-96.png"
+            alt="My LinkedIn profile"
+            class="icon-responsive"
+            onclick="location.href='https://www.linkedin.com/in/jacobtoton/'"
+          />
+          <img
+            src="/assets/images/icons/github/icons8-github-96.png"
+            alt="My Github profile"
+            class="icon-responsive-3"
+            onclick="location.href='https://github.com/JToton'"
+          />
+          <img
+            src="/assets/images/icons/discord/icons8-discord-96.png"
+            alt="Jacob Toton's discord Profile."
+            class="icon-responsive-2"
+            onclick="location.href=`https://discords.com/bio/p/QAEngineerAutomation`"
+          />
+          <!-- Auto Open Email Application with Information -->
+          <a href="mailto:jake_toton@live.com"
+            ><img
+              src="/assets/images/icons/email/icons8-email-100.png"
+              alt="Jacob Toton's email auto form fill."
+              class="icon-responsive-2"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Here you can learn more</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="/assets/images/icons/experience/icons8-storytelling-100.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Qaulity Assurance UI API Testing</p>
+              <p>Automation Programming</p>
+              <p>Agile Project Management</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="/assets/images/icons/education/icons8-education-100.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                University of Utah B.Cs. Bachelors Degree <br />University of
+                Utah Coding Bootcamp
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Check out all of this</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>HTML</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>CSS</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Terminal Commands</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>jQuery</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>JSON</h3>
+                  <p>Very Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <h3>NODE.js</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Databases</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Git</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>PWA's</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Data Structures</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Algorithms</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>REACT</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>C#</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <div>
+                  <h3>Java</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Take a look at my recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <a
+                href="https://jtoton.github.io/Accessibility-Refactoring-Challenge/"
+                ><img
+                  src="/assets/images/icons/projects/horiseon.png"
+                  alt="Horiseon: Accessibility and Refactoring"
+                  class="project-img"
+              /></a>
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Horiseon: Accessibility and Refactoring
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/JToton/Accessibility-Refactoring-Challenge/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://jtoton.github.io/Accessibility-Refactoring-Challenge/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <a href="https://jtoton.github.io/prework-study-guide/"
+                ><img
+                  src="/assets/images/icons/projects/prework-studyguide.png"
+                  alt="Pre-work Study Guide"
+                  class="project-img"
+              /></a>
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Pre-work Study Guide
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://jtoton.github.io/prework-study-guide/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/JToton/prework-study-guide/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <a href="https://collections.lib.utah.edu/ark:/87278/s61c7wkn"
+                ><img
+                  src="/assets/images/icons/projects/EAE.png"
+                  alt="EAE Play Again"
+                  class="project-img"
+              /></a>
+            </div>
+            <h2 class="experience-sub-title project-title">
+              EAE Play Again Professional Showcase
+            </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://games.utah.edu/news/eae-play-2019-highlights/'"
+              >
+                2019
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://games.utah.edu/news/save-the-date-eae-play-2020/'"
+              >
+                2020
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <a href="https://store.steampowered.com/app/1254950/Hell_To_Raze/"
+                ><img
+                  src="/assets/images/icons/projects/hellToRaze.jpg"
+                  alt="Project 3"
+                  class="project-img"
+              /></a>
+            </div>
+            <h2 class="experience-sub-title project-title">Hell To Raze</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/LoganDuffy702/ReignPrototype_01/'"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://store.steampowered.com/app/1254950/Hell_To_Raze/'"
+              >
+                Steam Download
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <a href="https://github.com/JToton/Cable-Crisis"
+                ><img
+                  src="/assets/images/art/ninja-2.png"
+                  alt="Project 3"
+                  class="project-img"
+              /></a>
+            </div>
+            <h2 class="experience-sub-title project-title">Cable-Crisis</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/JToton/Cable-Crisis'"
+              >
+                GitHub
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="/assets/images/icons/email/icons8-email-100.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:Jake_Toton@live.com">Jake_Toton@live.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="/assets/images/icons/linkedin/icons8-linkedin-96.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/jacobtoton/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!--Bottom Nav Menu in Footer-->
+    <!--Link Back to Other Sections-->
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
     </footer>
-
-
-      <!--Link JavaScript File-->
-      <script src="script.js"></script>
-    </main>
+    <!--Link script.js file-->
+    <script src="/script.js"></script>
   </body>
 </html>

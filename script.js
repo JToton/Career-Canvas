@@ -1,7 +1,7 @@
-function toggleDropdown() {
-  //target links class and children
-  const dropdown = document.querySelector(".dropdown-links");
-  const icon = document.querySelector(".dropdown-icon");
+function toggleMenu() {
+  //function to control hamburger drop down menu
+  const dropdown = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
   dropdown.classList.toggle("open");
   icon.classList.toggle("open");
 }

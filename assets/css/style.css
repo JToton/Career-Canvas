@@ -12,289 +12,362 @@
 body {
   font-family: "Roboto", sans-serif;
   background-color: #e7c590;
-  /* background: linear-gradient(#e7c590, #b2cbf2); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  flex: auto;
-  scroll-behavior: smooth;
-  height: 150%;
 }
 
-main {
-  width: 96%;
-  margin: 2rem auto;
-}
-
+/* Smooth Scroll */
 html {
-  height: auto;
+  scroll-behavior: smooth;
 }
+
 /* <P> Color */
 p {
   color: rgb(85, 85, 85);
 }
 
-.card-column {
-  flex: 1 0 100%;
-  padding: 1.5rem;
-  /* when the screen resizes, make it so our columns don't jump in size */
-  transition: flex-basis 500ms linear;
-  margin-bottom: 1.5rem;
+a,
+.btn {
+  transition: all 300ms ease;
 }
 
-/* ----NAVIGATION MENUS---- */
+.nav-links a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: black;
+}
+
+.menu-links a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  text-decoration-color: black;
+}
 
 /* Flexbox Distribution */
-nav {
-  display: flex;
-  /* Center items with space around each other */
-  justify-content: space-around;
-  align-items: center;
-  /* View hight from top of container. 10% Screen */
-}
-
+nav,
 .nav-links {
   display: flex;
-  gap: 2rem;
-  /* remove bullets */
-  list-style: none;
-  /* Measure space */
-  font-size: 2rem;
 }
 
-/* href style / Initial hidden */
+/* Alignment */
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+/* Navigation link styling */
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+/* <a> text color w/o decoration */
 a {
   color: black;
   text-decoration: none;
 }
 
-/* Color / Offset */
-.nav-links a:hover {
+/* Hover styling */
+a:hover {
   color: grey;
   text-decoration: underline;
-  text-underline-offset: 0.5rem;
-  text-decoration-color: black;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
-/* Dropdown Text style*/
-.dropdown-links a:hover {
-  /* hover color change */
-  color: grey;
-  text-decoration: underline;
-  /* offset underline below text */
-  text-underline-offset: 0.5rem;
-  text-decoration-color: black;
-}
-
-/* Name Font Size */
-.name {
+/* font size */
+.logo {
   font-size: 2rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
 }
 
-/* Remove Text icon change on name */
-.name:hover {
+/* default cursor on logo */
+.logo:hover {
   cursor: default;
 }
 
-/* ----DROPDOWN MENUS---- */
-
-/* Hide initially */
-#dropdown {
+/* Initally hide */
+#hamburger-nav {
   display: none;
 }
 
-/* Flex/style Control for Children
-    (When function "open"). */
-.dropdown-menu {
+/* Set condition */
+.hamburger-menu {
   position: relative;
   display: inline-block;
 }
 
-/* Flex/style control for Icon
-    (When function "open"/"closed"). */
-.dropdown-icon {
+/* flex control / styling and location */
+.hamburger-icon {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 20px;
+  height: 24px;
   width: 30px;
   cursor: pointer;
-  /* give some spave b/w links */
-  padding: 20px 20px;
 }
 
-/* Icon Style and trans */
-.dropdown-icon span {
+/* Smoother transitions / style / color */
+.hamburger-icon span {
   width: 100%;
   height: 2px;
   background-color: black;
-  /* Make menu change to x  */
   transition: all 0.3 ease-in-out;
 }
 
-/* Links in dropdown / pos / style */
-.dropdown-links {
+/* hamburger drop down pos
+set hidden until nec */
+.menu-links {
   position: absolute;
-  height: 200%;
   top: 100%;
-  right: -15%;
+  right: 0;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+/* Drop down <a tag styling
+    for dropdown when open */
+.menu-links a {
   display: block;
-  padding: -1px;
+  padding: 10px;
   text-align: center;
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
   transition: all 0.3 ease-in-out;
-  margin: 0px 0px 0px 0px;
 }
 
-/* Style List Items */
-.dropdown-links li {
+/* <li> no style
+    remove bullets */
+.menu-links li {
   list-style: none;
 }
 
-/* Add class then control styling */
-.dropdown-links.open {
+/* height location of drop box */
+.menu-links.open {
   max-height: 300px;
 }
 
-/* ----PROFILE SECTION---- */
-
-/* Styling for the Section's */
+/* Container padding for all
+flex boxes */
 section {
+  padding-top: 4vh;
+  height: 50vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
 
-/* Profile-1 flex / spacing */
+/* additonal flex control
+to display  */
+.section-container {
+  display: flex;
+}
+
+/* Profile flex container */
+/* justifies text to right of pic */
 #profile {
   display: flex;
   justify-content: center;
   gap: 5rem;
+  height: 40vh;
 }
 
-/* Profile-1 flex / size */
-.profile-1 {
+/* Pic and container postion and size */
+.section__pic-container {
   display: flex;
   height: 400px;
   width: 400px;
   margin: auto 0;
 }
 
-/* Profile-1 Details Location / spacing */
-.profile-1-text {
+/* align text aligned right of pic */
+.section__text {
   align-self: center;
   text-align: center;
+}
+
+/* <p> font weight */
+.section__text p {
   font-weight: 600;
-  margin-bottom: 0.5rem;
 }
 
-/* <p location / spacing */
-.profile-text-para-1 {
+/* Section controllers
+    resuable for all section text */
+.section__text__p1 {
+  font-size: 1.5rem;
   text-align: center;
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+  font-weight: 400;
+  color: black;
 }
 
-/* <p2 location / spacing */
-.profile-text-para-2 {
-  text-align: center;
-  font-size: 1.75rem;
-  margin-bottom: 0.5rem;
+.section__text__p2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: black;
 }
 
-/* Name location / spacing */
+/* Reusable tital text formatting */
 .title {
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  margin-bottom: 0.5rem;
+  /*   padding: 10%; */
 }
 
-/* Socials location / spacing */
-#socials {
+/* social icon flex control */
+#socials-container {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
   gap: 1rem;
 }
 
-/* ----ICONS---- */
-
+/* reusable icon controllers
+static and responsive versions
+rotations for interactive experience */
 .icon {
   cursor: pointer;
+  height: 2rem;
 }
 
-.icon:hover {
+.icon-responsive {
   cursor: pointer;
-  transform: scale(1.3) rotate(5deg);
+  height: 3rem;
 }
 
-/* Non-responsive Icons */
-.icon-2 {
-  cursor: default;
+.icon-responsive:hover {
+  cursor: pointer;
+  height: 3rem;
+  transform: scale(1.3) rotate(25deg);
 }
 
-.icon-3 {
-  display: flex;
-  justify-content: left;
+.icon-responsive-2 {
+  cursor: pointer;
+  height: 3rem;
 }
 
-/* ----ABOUT ME---- */
+.icon-responsive-2:hover {
+  cursor: pointer;
+  height: 3rem;
+  transform: scale(1.3) rotate(-25deg);
+}
 
-/* Ceneter Flex Text */
-.section-container {
+.icon-responsive-3 {
+  cursor: pointer;
+  height: 3rem;
+}
+
+.icon-responsive-3:hover {
+  cursor: pointer;
+  height: 3rem;
+  transform: scale(1.3) rotate(0deg);
+}
+
+/* button controls for project cards */
+.btn-container {
   display: flex;
   justify-content: center;
+  gap: 1rem;
 }
 
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+/* btn colors */
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+/* hover cursor controls */
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+/* hover colors */
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+/* text rem controls for size and space */
+.btn-container {
+  gap: 1rem;
+}
+
+/* about section pos */
 #about {
   position: relative;
 }
 
-/* Text Cont Style */
+/* container margins between 
+each other, reused for other sections */
 .about-containers {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
 
-/* Details Orientation */
+/* expereince and education flex location */
 .about-details-container {
   justify-content: center;
   flex-direction: column;
 }
 
-/* Unstack Details Cont
-    center flex, style and color */
+/* flex between about me sections
+     adjust from default columns*/
 .about-containers,
 .about-details-container {
   display: flex;
-  justify-content: center;
 }
 
+/* Primary reusable container style
+Creates the blue styled boxes around all 
+items on the page */
 .details-container {
   padding: 1.5rem;
   flex: 1;
   background: #b2cbf2;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
   text-align: center;
 }
 
-/* ----EXPERIENCE---- */
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
 
+/* sets relative pos
+to nearby affected items */
 #experience {
   position: relative;
 }
 
-/* Text Styling */
+/* container bottom margin
+     color and box/text style added*/
 .experience-sub-title {
   color: rgb(85, 85, 85);
   font-weight: 600;
@@ -302,64 +375,120 @@ section {
   margin-bottom: 2rem;
 }
 
-/* Flex / Position Control */
-.expereince-details-container {
+/* experience section flex control */
+.experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
-/* wrap experience if larger than container
-    adjusts with screen size */
+/* inner container 
+for exp items */
 .article-container {
   display: flex;
-  text-align: center;
+  text-align: initial;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 2.5rem;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
-.article {
+/* flex and styling for container
+holding above items */
+article {
   display: flex;
   width: 10rem;
-  justify-content: space-evenly;
+  justify-content: space-around;
   gap: 0.5rem;
 }
 
-#project {
+/* project box pos / styles
+postitions and margins 
+for all below */
+#projects {
+  position: relative;
+}
+
+/* colors */
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  background-color: #b2cbf2;
+}
+
+/* sets the wrap affect with rem
+relative pos and sizes */
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/* contact flex size */
+#contact {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  height: 40vh;
 }
 
-footer {
-  display: flex;
-  /* Center items with space around each other */
-  justify-content: space-around;
-  align-items: center;
-  /* View hight from top of container. 10% Screen */
-}
-
-/* Flex / Position Control */
-.project-details-container {
+/* box style and drawing
+    color, position and setup */
+.contact-info-upper-container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-}
-
-/* Text Cont Style */
-.project-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.project-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: #b2cbf2;
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+  background: #b2cbf2;
+}
+
+/* space between above container
+    inner size that sets email and link
+    spacing */
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+/* slight text increase */
+.contact-info-container p {
+  font-size: larger;
+}
+
+/* icon no cursor change */
+.contact-icon {
+  cursor: default;
+}
+
+/* icon size */
+.email-icon {
+  height: 2.5rem;
+}
+
+/* footer size and margin */
+footer {
+  height: 15vh;
+  margin: 0 1rem;
+}
+
+/* center <p> text */
+footer p {
   text-align: center;
 }
