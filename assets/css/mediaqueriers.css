@@ -1,5 +1,44 @@
 /* Mobile/flex compatibility controller */
 
+@media screen and (max-width: 1400px) {
+  /* When screen < 968 disapear */
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  #about-containers {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  /* #nav {
+    display: none;
+  }
+  #dropdown {
+    display: flex;
+  }
+  .contact, .profile{
+    display: block;
+  } */
+  /* When screen < 1200px disapear */
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: flex;
+  }
+  section,
+  .sections-container {
+    height: fit-content;
+  }
+  #section {
+    margin: 0 5%;
+  }
+}
+
 @media screen and (max-width: 968px) {
   /* When screen < 968 disapear */
   #nav {
@@ -7,24 +46,5 @@
   }
   #dropdown {
     display: flex;
-  }
-}
-
-/* Slide Show media controller */
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev,
-  .next,
-  .text {
-    font-size: 11px;
   }
 }

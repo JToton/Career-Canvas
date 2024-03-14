@@ -333,6 +333,25 @@ footer {
   background: linear-gradient(#e7c590, #b2cbf2);
 }
 
-p.copyright {
-  background: linear-gradient(#e7c590, #b2cbf2);
+/* Flex / Position Control */
+.project-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Text Cont Style */
+.project-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.project-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: #b2cbf2;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  text-align: center;
 }
