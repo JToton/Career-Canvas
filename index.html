@@ -18,7 +18,7 @@
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#work">Projects</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </header>
@@ -42,6 +42,7 @@
       </drop>
     </nav>
 
+    <!-- Profile Section / Icons and Socials -->
     <section id="profile">
       <figure class="profile-1">
         <img
@@ -56,6 +57,7 @@
           QA Engineer | Front End Developer | API & UI Automation Tester
         </p>
         <p>Resume and Social's</p>
+        <!-- Create button to link resume through icon -->
         <container class="button-container">
           <address id="socials">
             <img
@@ -64,6 +66,7 @@
               class="icon"
               onclick="window.open(`/assets/Resume/JacobTotonResume.pdf`)"
             />
+            <!-- Link All Icons to Respective Social Link -->
             <img
               src="/assets/images/icons/linkedin/icons8-linkedin-96.png"
               alt="Jacob Toton's LinkedIn Profile."
@@ -83,6 +86,7 @@
               class="icon"
               onclick="location.href=`https://discords.com/bio/p/QAEngineerAutomation`"
             />
+            <!-- Link Contact Icon to Footer -->
             <img
               src="/assets/images/icons/email/icons8-email-100.png"
               alt="Jacob Toton's email. Link at bottom."
@@ -94,8 +98,9 @@
       </figcaption>
     </section>
 
+    <!-- About Me Section -->
     <section id="about">
-      <p class="profile-text-para-2">Get to know more about me</p>
+      <p class="profile-text-para-2">Get to know more</p>
       <h1 class="title">About Me</h1>
       <container class="section-container">
         <container class="about-details-container">
@@ -109,6 +114,7 @@
           </text>
           <container class="about-containers">
             <figure class="details-container">
+              <!-- Link Icon Images to Style Above Text -->
               <img
                 src="/assets/images/icons/experience/icons8-storytelling-100.png"
                 alt="Experience Icon"
@@ -136,6 +142,7 @@
       </container>
     </section>
 
+    <!-- Experience Section / Skills as Text Format -> Flex -->
     <section id="experience">
       <p class="profile-text-para-2">Here is a list of my</p>
       <h1 class="title">Experience</h1>
@@ -220,25 +227,83 @@
         </container>
       </container>
     </section>
-    <section id="projects">
-      <p class="profile-text-para-2">Here are some of my recent</p>
-      <h1 class="title">Projects</h1>
-      <container class="experience-details-container">
-        <container class="about-containers">
-          <container class="details-container">
-            <h2 class="experience-sub-title">Project One</h2>
-            <container class="article-container">
-              <img src="/assets/images/icons/projects/horiseon.png" alt="Horiseon Project Image">
 
-            </container>
-          </container>
+    <!-- Slideshow: Sourced from https://w3schools.com/ -->
+   <section id="projects">
+    <container class="experience-details-container">
+      <container class="about-containers">
+        <container class="details-container">
+        <p class="profile-text-para-2">Take a look at my recent</p>
+        <h1 class="title">Projects</h1>
+          <article class="slideshow-container">
+            <!-- Link Images and Descriptions -->
+          <figure class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <a href="https://github.com/JToton/Accessibility-Refactoring-Challenge"><img src="/assets/images/icons/projects/horiseon.png" alt="Horiseon Webpage" style="width:100%"></a>
+            <div class="text">Horiseon: Accessibility & Refactoring</div>
+          </figure>
+
+          <figure class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <a href="https://jtoton.github.io/prework-study-guide/"><img src="/assets/images/icons/projects/prework-studyguide.png" alt="Horiseon Webpage" style="width:100%"></a>
+            <div class="text">Pre-work Studyguide</div>
+          </figure>
+          
+          <figure class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <a href="https://store.steampowered.com/app/1254950/Hell_To_Raze/"><img src="/assets/images/icons/projects/hellToRaze.jpg" alt="Hell to Raze Steam Link" style="width:100%"></a>
+            <div class="text">Hell to Raze</div>
+          </figure>
+          
+          <figure class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <a href="https://games.utah.edu/news/eae-play-2019-highlights/"><img src="/assets/images/icons/projects/EAE.png" alt="EAE Play 2019-2020" style="width:100%"></a>
+            <div class="text">EAE Play Games Professional Showcase</div>
+          </figure>
+          
+          <!-- Call to functions in script.js -->
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+          
+        </article>
+          <br>
+
+          <!-- Dots @ bottoms to select specific -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
         </container>
       </container>
-    </section>
+    </container>
+  </section>
 
+  <section class="contact">
+    <p class="profile-text-para-2">Get in touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="/assets/images/icons/email/icons8-email-100.png" 
+        alt="Email Icon Image" 
+        class="icon contact-icon"/>
+        <p><a href="mailto:jake_toton@live.com">Jake_Toton@live.com</a></p>
+      </div>
+    </div>
+      <div class="contact-info-container">
+        <img src="/assets/images/icons/linkedin/icons8-linkedin-96.png" 
+        alt="Email Icon Image" 
+        class="icon contact-icon"/>
+        <p><a href="https://www.linkedin.com/in/jacobtoton/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>Placeholder Footer for now</footer>
 
     <!--Link JavaScript File-->
-    <script src="script.js">
-    </script>
+    <script src="script.js"></script>
+
   </body>
 </html>
