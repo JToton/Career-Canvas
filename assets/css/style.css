@@ -214,7 +214,7 @@ to display  */
 .title {
   font-size: 2rem;
   text-align: center;
-  /*   padding: 10%; */
+  padding: 1rem;
 }
 
 /* social icon flex control */
@@ -303,6 +303,11 @@ rotations for interactive experience */
   background: rgb(0, 0, 0);
 }
 
+/* text rem controls for size and space */
+.btn-container {
+  gap: 1rem;
+}
+
 .btn-color-2 {
   background: none;
 }
@@ -311,9 +316,68 @@ rotations for interactive experience */
   border: rgb(255, 255, 255) 0.1rem solid;
 }
 
-/* text rem controls for size and space */
-.btn-container {
-  gap: 1rem;
+/* experience section flex control */
+.experience-details-container-2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* container margins between 
+each other, reused for other sections */
+.about-containers-2 {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.project-title-2 {
+  margin: 1rem;
+  color: black;
+}
+
+/* singular container style
+Creates the blue styled boxes around all 
+items on the page for recent */
+.details-container-2 {
+  padding: 1rem;
+  flex: 1;
+  background: #b2cbf2;
+  border-radius: 1rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+}
+
+/* colors */
+.color-container-2 {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  background-color: #b2cbf2;
+}
+
+/* inner container 
+for exp items */
+.article-container-2 {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+/* container bottom margin
+     color and box/text style added*/
+.experience-sub-title-2 {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+#projects-2 {
+  position: relative;
 }
 
 /* about section pos */

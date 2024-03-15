@@ -145,6 +145,8 @@ through slack and or discord.
 
 • Download 1,341,900 free icons (SVG, PNG). (n.d.). https://icons8.com/icons
 
+• YouTube. (n.d.). https://www.youtube.com/, "Great Stack","How to become a developer","Tahmid Ahmed, "Codehal","Here's the code."
+
 • How to use an image as a link in HTML? (n.d.). https://www.tutorialspoint.com/How-to-use-an-image-as-a-link-in-HTML Linking to a pdf file with html. (n.d.).
 
 • Stack Overflow. https://stackoverflow.com/questions/36899940/linking-to-a-pdf-file-with-html Mojeed, I. (2022, November 4).
@@ -153,4 +155,4 @@ through slack and or discord.
 
 • picofme.io | AI profile picture maker. (n.d.). https://picofme.io. https://picofme.io/
 
-• Roboto - Google Fonts. (n.d.). Google Fonts. https://fonts.google.com/specimen/Roboto?sort=popularity YouTube. (n.d.). https://www.youtube.com/
+• Roboto - Google Fonts. (n.d.). Google Fonts. https://fonts.google.com/specimen/Roboto?sort=popularity
