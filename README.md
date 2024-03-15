@@ -1,4 +1,4 @@
-# Accessibility-Refactoring-Challenge
+# Career-Canvas
 
 ## Description
 
